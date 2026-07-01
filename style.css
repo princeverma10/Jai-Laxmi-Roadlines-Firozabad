@@ -1,0 +1,143 @@
+/* Custom styling system for Jai Laxmi Road Lines */
+
+/* Material symbols font configuration */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Glassmorphism style */
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(11, 61, 145, 0.05);
+}
+
+/* Action Orange Button styles */
+.action-orange-btn {
+    background: linear-gradient(180deg, #F57C00 0%, #E65100 100%);
+    box-shadow: 0 4px 14px rgba(245, 124, 0, 0.3);
+    transition: all 0.3ms ease-in-out;
+}
+.action-orange-btn:hover {
+    background: linear-gradient(180deg, #FF9100 0%, #F57C00 100%);
+    box-shadow: 0 6px 20px rgba(245, 124, 0, 0.4);
+    transform: translateY(-1px);
+}
+.action-orange-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(245, 124, 0, 0.2);
+}
+
+/* Primary Outlined Button styles */
+.outline-primary-btn {
+    border: 2px solid #0B3D91;
+    color: #0B3D91;
+    transition: all 0.3s ease-in-out;
+}
+.outline-primary-btn:hover {
+    background-color: #0B3D91;
+    color: #FFFFFF;
+}
+
+/* Hero text enhancement */
+.text-shadow-hero {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Animations */
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Scroll Animation Transitions */
+.reveal-animated {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Timeline Layout */
+.timeline-line {
+    background: linear-gradient(to bottom, #0B3D91, #F57C00);
+}
+
+/* Form controls */
+.custom-input {
+    background-color: #F3F4F6;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-input:focus {
+    background-color: #FFFFFF;
+    border-color: #0B3D91;
+    box-shadow: 0 0 0 4px rgba(11, 61, 145, 0.15);
+}
+
+/* Navigation link active styling */
+.nav-link {
+    position: relative;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #F57C00;
+    transition: width 0.3s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Active links specific overrides */
+.nav-link.active {
+    color: #F57C00 !important;
+}
+
+/* Route card arrow effect */
+.route-card:hover .route-arrow {
+    transform: translateX(8px);
+}
+.route-arrow {
+    transition: transform 0.3s ease;
+}
+
+/* Gallery Hover effect */
+.gallery-zoom img {
+    transition: transform 0.5s ease;
+}
+.gallery-zoom:hover img {
+    transform: scale(1.05);
+}
+
+/* Accordion details/summary styling */
+.faq-summary::-webkit-details-marker {
+    display: none;
+}
+.faq-summary {
+    list-style: none;
+}
+
+/* Sticky navigation glassmorphism updates */
+.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 10px 30px rgba(11, 61, 145, 0.1) !important;
+}
