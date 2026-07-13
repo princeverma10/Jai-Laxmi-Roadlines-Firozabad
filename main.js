@@ -252,7 +252,7 @@ function showSuccessNotification(form, originalBtnText) {
  * Customizes WhatsApp links to trigger WhatsApp API with pre-filled message templates.
  */
 function initWhatsAppClick() {
-    const whatsappNumber = "919837775265";
+    const whatsappNumber = "";
     const waLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"], button[class*="bg-[#25D366]"], a[class*="bg-[#25D366]"]');
 
     waLinks.forEach(link => {
